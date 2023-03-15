@@ -12,7 +12,6 @@
     <h4 class="p-3 text-center">Manage items</h4>
 </div>
 
-
 <form style="max-width: 700px; margin: 0 auto"
       enctype="multipart/form-data"
       th:object="${itemAddBindingModel}"
@@ -52,13 +51,12 @@
             </div>
         </div>
 
-
         <div class="form-group row">
             <label class="col-sm-4 col-form-label">Item type: </label><br>
             <div class="col-sm-8 p-1">
                 <select th:field="*{type}" id="type" class="custom-select">
                     <option value="" selected>Select type</option>
-                    <option th:each="t : ${T(softuni.restaurant.model.entity.enums.TypeEnum).values()}"
+                    <option th:each="t : ${T(softuni.burgerbox.model.entity.enums.TypeEnum).values()}"
                             th:value="${t}" th:text="${t}">Select level
                     </option>
                 </select>
