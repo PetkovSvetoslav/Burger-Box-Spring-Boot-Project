@@ -19,7 +19,7 @@
                     <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger">
                         Invalid name
                     </small>
-                    <small th:if="${productNameOccupied}"  class="text-danger">
+                        <small th:if="${productUpdateBindingModel}"  class="text-danger">
                         Product name already exists.
                     </small>
                 </div>
@@ -54,7 +54,6 @@
 
 </div>
 
-<!-- footer Section Ends Here -->
 <script>$(document).ready(function () {
     $("#cancelBtn").on("click", function () {
         window.location = "[[@{/terminal/products}]]";
