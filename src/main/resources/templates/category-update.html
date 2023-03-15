@@ -2,9 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/common-terminal::terminal-head"></head>
 
-
 <body>
-<!-- Navbar Section Starts Here -->
 <nav class="navbar-expand">
     <header th:replace="fragments/common-terminal::terminal_nav"></header>
 </nav>
@@ -12,7 +10,6 @@
     <div>
         <h4 class="p-3 text-center">Update category</h4>
     </div>
-
 
     <form enctype="multipart/form-data"
           th:object="${categoryUpdateBindingModel}"
@@ -35,7 +32,7 @@
                     <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="error-message">
                         Invalid name
                     </small>
-                    <small th:if="${categoryNameOccupied}"  class="text-danger">
+                        <small th:if="${categoryUpdateBindingModel}"  class="text-danger">
                         Category name already exists.
                     </small>
                 </div>
