@@ -11,12 +11,10 @@
         <h4 class="p-3 text-center">Manage products</h4>
     </div>
 
-
         <form style="max-width: 700px; margin: 0 auto"
               th:object="${productAddBindingModel}"
               th:method="post"
               th:action="@{/terminal/products/add}">
-
 
             <div class="border border-secondary rounded p-3">
                 <div class="form-group row">
@@ -51,17 +49,12 @@
             </div>
         </form>
 
-
-
-
-
     <p class="text-center">
         <a href="/terminal/items">See All Items</a>
     </p>
 
-
 <footer th:replace="fragments/common::footer"></footer>
-<!-- footer Section Ends Here -->
+
 <script>$(document).ready(function () {
     $("#cancelBtn").on("click", function () {
         window.location = "[[@{/terminal/products}]]";
