@@ -35,7 +35,7 @@
         <div class="container-contact">
             <div class="logo">
                 <a th:href="@{/}" title="Logo">
-                    <img th:src="@{/images/restaurant-logo1.png}" alt="Restaurant Logo" class="img-responsive">
+                    <img th:src="@{/images/restaurant-logo1.jpg}" alt="Restaurant Logo" class="img-responsive">
                 </a>
 
             </div>
@@ -54,23 +54,23 @@
                         <a th:href="@{/}">Home</a>
                     </li>
                     <li>
-                        <a th:href="@{/categories}">Categories</a>
+                        <a th:text="#{navbar_categories}" th:href="@{/categories}">Categories</a>
                     </li>
                     <li>
-                        <a th:href="@{/items/foods}">Foods</a>
+                        <a th:text="#{navbar_foods}" th:href="@{/items/foods}">Foods</a>
                     </li>
                     <li>
-                        <a th:href="@{/items/drinks}">Drinks</a>
+                        <a th:text="#{navbar_drinks}" th:href="@{/items/drinks}">Drinks</a>
                     </li>
                     <li>
-                        <a th:href="@{/contacts}">Contact</a>
+                        <a th:text="#{navbar_contact}" th:href="@{/contacts}">Contact</a>
                     </li>
                     <li sec:authorize="!isAuthenticated()">
-                        <a th:href="@{/users/login}">Login</a>
+                        <a th:text="#{navbar_login}" th:href="@{/users/login}">Login</a>
                     </li>
 
                     <li sec:authorize="!isAuthenticated()">
-                        <a th:href="@{/users/register}">Register</a>
+                        <a th:text="#{navbar_register}" th:href="@{/users/register}">Register</a>
                     </li>
                     <li>
                         <a th:href="@{/cart}"><img class="cart" width="30px" high="30px"
@@ -81,7 +81,7 @@
                             <span sec:authorize="isAuthenticated()" th:text="#{greeting}"></span>
                             <th:span sec:authentication="name"></th:span>
                             ! </a>
-                            <input class="btn btn-link" style="color: #fd7e14;"  type="submit" value="Logout">
+                            <input th:text="#{navbar_logout}" class="btn btn-link" style="color: #fd7e14;"  type="submit" value="Logout">
                         </form>
 
                     </li>
@@ -92,7 +92,7 @@
 
             <span>
             <form th:method="get" class="languages">
-                <label for="lang">
+                <label th:text="#{navbar_language}" for="lang">
                     <img th:src="#{flag}" style="width: 30px">
                 </label>
                 <select
@@ -108,42 +108,42 @@
             <div class="clearfix"></div>
         </div>
     </section>
-<section>
-    <div><img src="/images/3%20cheeseburger%20free%20jpg.jpg"></div>
-</section>
 
     <section class="food-search text-right">
         <div class="container-contact">
 
-            <form th:action="@{/items/search}">
+            <form  th:action="@{/items/search}">
                 <input th:value="${keyword}" type="search" id="keyword" name="keyword" placeholder="Search for Food.."
                        required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+                <input th:text="#{navbar_search}" type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
 
         </div>
     </section>
-
+    <section>
+        <div class="burger">
+            <!--        <img src="/images/3%20cheeseburger%20free%20jpg.jpg">-->
+        </div>
+    </section>
 </header>
-
 
 <section class="categories" th:fragment="categories">
     <div class="container-contact">
         <h2 class="text-center">Explore Menu</h2>
-
-        <a th:href="@{/items/foods}">
-            <div class="box-3 float-container">
-                <img src="/images/food.jpg" alt="Food" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">FOOD</h3>
-            </div>
-        </a>
 
         <a th:href="@{/items/drinks}">
             <div class="box-3 float-container">
                 <img src="/images/drinks.jpg" alt="Drinks" class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">DRINKS</h3>
+            </div>
+        </a>
+
+        <a th:href="@{/items/foods}">
+            <div class="box-3 float-container">
+                <img src="/images/food.jpg" alt="Food" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">FOOD</h3>
             </div>
         </a>
 
