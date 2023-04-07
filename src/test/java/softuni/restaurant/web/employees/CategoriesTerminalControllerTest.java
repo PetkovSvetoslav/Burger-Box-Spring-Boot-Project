@@ -1,4 +1,4 @@
-package softuni.restaurant.web.employees;
+package softuni.burgerbox.web.employees;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,16 +11,16 @@ import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import softuni.restaurant.model.entity.CategoryEntity;
-import softuni.restaurant.model.entity.ItemEntity;
-import softuni.restaurant.model.entity.UserEntity;
-import softuni.restaurant.model.entity.enums.RoleEnum;
-import softuni.restaurant.model.entity.enums.TypeEnum;
-import softuni.restaurant.repository.CategoryRepository;
-import softuni.restaurant.repository.ItemRepository;
-import softuni.restaurant.repository.UserRepository;
-import softuni.restaurant.service.CategoryService;
-import softuni.restaurant.service.ItemService;
+import softuni.burgerbox.model.entity.CategoryEntity;
+import softuni.burgerbox.model.entity.ItemEntity;
+import softuni.burgerbox.model.entity.UserEntity;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
+import softuni.burgerbox.model.entity.enums.TypeEnum;
+import softuni.burgerbox.repository.CategoryRepository;
+import softuni.burgerbox.repository.ItemRepository;
+import softuni.burgerbox.repository.UserRepository;
+import softuni.burgerbox.service.CategoryService;
+import softuni.burgerbox.service.ItemService;
 
 import java.math.BigDecimal;
 import java.util.Optional;
@@ -107,7 +107,7 @@ class CategoriesTerminalControllerTest {
     @Test
     @WithMockUser(value = "testUser", username = "test", roles = "ADMIN")
     void testAddCategoryCorrect() throws Exception {
-        //TODO how to post MediaType object
+        // how to post MediaType object
 
 //        mockMvc
 //                .perform(post("/terminal/categories/add")
