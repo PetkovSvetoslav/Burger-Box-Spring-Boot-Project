@@ -1,4 +1,4 @@
-package softuni.restaurant.web.employees;
+package softuni.burgerbox.web.employees;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,13 +9,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import softuni.restaurant.model.entity.*;
-import softuni.restaurant.model.entity.enums.RoleEnum;
-import softuni.restaurant.model.entity.enums.TypeEnum;
-import softuni.restaurant.repository.*;
-import softuni.restaurant.service.CategoryService;
-import softuni.restaurant.service.ItemService;
-import softuni.restaurant.service.ProductService;
+import softuni.burgerbox.model.entity.*;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
+import softuni.burgerbox.model.entity.enums.TypeEnum;
+import softuni.burgerbox.repository.*;
+import softuni.burgerbox.service.CategoryService;
+import softuni.burgerbox.service.ItemService;
+import softuni.burgerbox.service.ProductService;
 
 import java.math.BigDecimal;
 import java.util.Optional;
