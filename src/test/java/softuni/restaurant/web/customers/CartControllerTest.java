@@ -1,4 +1,4 @@
-package softuni.restaurant.web.customers;
+package softuni.burgerbox.web.customers;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,13 +11,13 @@ import org.springframework.mock.web.MockMultipartHttpServletRequest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import softuni.restaurant.model.entity.CartDetailEntity;
-import softuni.restaurant.model.entity.ItemEntity;
-import softuni.restaurant.model.entity.UserEntity;
-import softuni.restaurant.model.entity.enums.RoleEnum;
-import softuni.restaurant.model.entity.enums.TypeEnum;
-import softuni.restaurant.repository.*;
-import softuni.restaurant.service.*;
+import softuni.burgerbox.model.entity.CartDetailEntity;
+import softuni.burgerbox.model.entity.ItemEntity;
+import softuni.burgerbox.model.entity.UserEntity;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
+import softuni.burgerbox.model.entity.enums.TypeEnum;
+import softuni.burgerbox.repository.*;
+import softuni.burgerbox.service.*;
 
 import java.math.BigDecimal;
 import java.util.Set;
@@ -106,7 +106,6 @@ class CartControllerTest {
         )
                 .andExpect(status().is3xxRedirection())
                 .andExpect(redirectedUrl("/users/login"));
-//TODO how to get the mock user as principal
     }
 
 
