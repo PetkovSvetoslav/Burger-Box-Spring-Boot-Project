@@ -1,4 +1,4 @@
-package softuni.restaurant.Service;
+package softuni.burgerbox.Service;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -14,14 +14,14 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
-import softuni.restaurant.model.entity.UserEntity;
-import softuni.restaurant.model.entity.enums.RoleEnum;
-import softuni.restaurant.model.service.UserRegistrationServiceModel;
-import softuni.restaurant.repository.UserRepository;
-import softuni.restaurant.service.UserService;
-import softuni.restaurant.service.impl.RestaurantUser;
-import softuni.restaurant.service.impl.RestaurantUserServiceImpl;
-import softuni.restaurant.service.impl.UserServiceImpl;
+import softuni.burgerbox.model.entity.UserEntity;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
+import softuni.burgerbox.model.service.UserRegistrationServiceModel;
+import softuni.burgerbox.repository.UserRepository;
+import softuni.burgerbox.service.UserService;
+import softuni.burgerbox.service.impl.RestaurantUser;
+import softuni.burgerbox.service.impl.RestaurantUserServiceImpl;
+import softuni.burgerbox.service.impl.UserServiceImpl;
 
 import java.util.ArrayList;
 import java.util.Collection;
