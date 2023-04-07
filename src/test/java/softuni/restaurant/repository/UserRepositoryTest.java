@@ -9,8 +9,8 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 
 import org.springframework.test.annotation.Rollback;
-import softuni.restaurant.model.entity.UserEntity;
-import softuni.restaurant.model.entity.enums.RoleEnum;
+import softuni.burgerbox.model.entity.UserEntity;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
 
 import java.util.List;
 import java.util.Locale;
