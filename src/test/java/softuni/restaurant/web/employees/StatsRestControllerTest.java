@@ -1,4 +1,4 @@
-package softuni.restaurant.web.employees;
+package softuni.burgerbox.web.employees;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,11 +9,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import softuni.restaurant.model.entity.UserEntity;
-import softuni.restaurant.model.entity.enums.RoleEnum;
-import softuni.restaurant.model.view.StatsView;
-import softuni.restaurant.repository.UserRepository;
-import softuni.restaurant.service.StatsService;
+import softuni.burgerbox.model.entity.UserEntity;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
+import softuni.burgerbox.model.view.StatsView;
+import softuni.burgerbox.repository.UserRepository;
+import softuni.burgerbox.service.StatsService;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
