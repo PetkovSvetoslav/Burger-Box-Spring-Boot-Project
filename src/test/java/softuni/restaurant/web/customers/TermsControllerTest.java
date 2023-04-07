@@ -1,4 +1,4 @@
-package softuni.restaurant.web.customers;
+package softuni.burgerbox.web.customers;
 
 import org.junit.jupiter.api.Test;
 
