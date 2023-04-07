@@ -1,4 +1,4 @@
-package softuni.restaurant.Service.impl;
+package softuni.burgerbox.Service.impl;
 
 
 import org.junit.jupiter.api.Assertions;
@@ -10,10 +10,10 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import softuni.restaurant.model.entity.UserEntity;
-import softuni.restaurant.model.entity.enums.RoleEnum;
-import softuni.restaurant.repository.UserRepository;
-import softuni.restaurant.service.impl.RestaurantUserServiceImpl;
+import softuni.burgerbox.model.entity.UserEntity;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
+import softuni.burgerbox.repository.UserRepository;
+import softuni.burgerbox.service.impl.RestaurantUserServiceImpl;
 
 
 import java.util.Optional;
