@@ -1,4 +1,4 @@
-package softuni.restaurant.repository;
+package softuni.burgerbox.repository;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -7,9 +7,9 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.annotation.Rollback;
-import softuni.restaurant.model.entity.ItemEntity;
-import softuni.restaurant.model.entity.OrderItemEntity;
-import softuni.restaurant.model.entity.enums.TypeEnum;
+import softuni.burgerbox.model.entity.ItemEntity;
+import softuni.burgerbox.model.entity.OrderItemEntity;
+import softuni.burgerbox.model.entity.enums.TypeEnum;
 
 import java.math.BigDecimal;
 
