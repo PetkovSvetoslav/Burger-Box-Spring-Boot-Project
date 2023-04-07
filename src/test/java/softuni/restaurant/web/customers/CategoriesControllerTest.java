@@ -1,4 +1,4 @@
-package softuni.restaurant.web.customers;
+package softuni.burgerbox.web.customers;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,13 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
-import softuni.restaurant.model.entity.CategoryEntity;
-import softuni.restaurant.model.entity.ItemEntity;
-import softuni.restaurant.model.entity.enums.TypeEnum;
-import softuni.restaurant.repository.CategoryRepository;
-import softuni.restaurant.repository.ItemRepository;
-import softuni.restaurant.service.CategoryService;
-import softuni.restaurant.service.ItemService;
+import softuni.burgerbox.model.entity.CategoryEntity;
+import softuni.burgerbox.model.entity.ItemEntity;
+import softuni.burgerbox.model.entity.enums.TypeEnum;
+import softuni.burgerbox.repository.CategoryRepository;
+import softuni.burgerbox.repository.ItemRepository;
+import softuni.burgerbox.service.CategoryService;
+import softuni.burgerbox.service.ItemService;
 
 import java.math.BigDecimal;
 import java.util.Set;
