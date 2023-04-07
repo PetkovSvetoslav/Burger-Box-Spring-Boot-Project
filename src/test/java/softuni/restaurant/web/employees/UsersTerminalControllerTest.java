@@ -1,4 +1,4 @@
-package softuni.restaurant.web.employees;
+package softuni.burgerbox.web.employees;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,9 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import softuni.restaurant.model.entity.UserEntity;
-import softuni.restaurant.model.entity.enums.RoleEnum;
-import softuni.restaurant.repository.UserRepository;
+import softuni.burgerbox.model.entity.UserEntity;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
+import softuni.burgerbox.repository.UserRepository;
 
 import java.util.Optional;
 
@@ -82,8 +82,7 @@ class UsersTerminalControllerTest {
     @Test
     @WithMockUser(value = "testUser", username = "test", roles = "ADMIN")
     void testSaveUserExistingUserName() throws Exception {
-//TODO how to check that user with the same name exists from the js call rest controller
-
+// how to check that user with the same name exists from the js call rest controller
 //        mockMvc
 //                .perform(post("/terminal/save-user","terminal/check-username")
 //                        .param("username", "test")
