@@ -1,4 +1,4 @@
-package softuni.restaurant.web.customers;
+package softuni.burgerbox.web.customers;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,16 +10,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import softuni.restaurant.model.entity.UserEntity;
-import softuni.restaurant.model.entity.enums.RoleEnum;
-import softuni.restaurant.repository.ItemRepository;
-import softuni.restaurant.repository.OrderItemRepository;
-import softuni.restaurant.repository.OrderRepository;
-import softuni.restaurant.repository.UserRepository;
-import softuni.restaurant.service.ItemService;
-import softuni.restaurant.service.OrderItemService;
-import softuni.restaurant.service.OrderService;
-import softuni.restaurant.service.UserService;
+import softuni.burgerbox.model.entity.UserEntity;
+import softuni.burgerbox.model.entity.enums.RoleEnum;
+import softuni.burgerbox.repository.ItemRepository;
+import softuni.burgerbox.repository.OrderItemRepository;
+import softuni.burgerbox.repository.OrderRepository;
+import softuni.burgerbox.repository.UserRepository;
+import softuni.burgerbox.service.ItemService;
+import softuni.burgerbox.service.OrderItemService;
+import softuni.burgerbox.service.OrderService;
+import softuni.burgerbox.service.UserService;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -75,7 +75,6 @@ class OrderControllerTest {
 
     @Test
     @WithMockUser(value = "testUser", username = "test", roles = "CUSTOMER")
-   //TODO
     void openOrderPage() throws Exception {
         mockMvc
                 .perform(get("/order"))
@@ -95,7 +94,6 @@ class OrderControllerTest {
 
     @Test
     void order() {
-        //TODO
     }
 
 }
