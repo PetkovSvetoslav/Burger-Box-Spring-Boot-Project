@@ -1,4 +1,4 @@
-package softuni.restaurant.repository;
+package softuni.burgerbox.repository;
 
 
 import org.junit.jupiter.api.Assertions;
@@ -12,12 +12,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.annotation.Rollback;
-import softuni.restaurant.model.entity.AllergenEntity;
-import softuni.restaurant.model.entity.CategoryEntity;
-import softuni.restaurant.model.entity.ItemEntity;
-import softuni.restaurant.model.entity.ProductEntity;
-import softuni.restaurant.model.entity.enums.AllergenEnumName;
-import softuni.restaurant.model.entity.enums.TypeEnum;
+import softuni.burgerbox.model.entity.AllergenEntity;
+import softuni.burgerbox.model.entity.CategoryEntity;
+import softuni.burgerbox.model.entity.ItemEntity;
+import softuni.burgerbox.model.entity.ProductEntity;
+import softuni.burgerbox.model.entity.enums.AllergenEnumName;
+import softuni.burgerbox.model.entity.enums.TypeEnum;
 
 import java.math.BigDecimal;
 import java.util.List;
