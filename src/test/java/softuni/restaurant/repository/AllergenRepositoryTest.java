@@ -1,4 +1,4 @@
-package softuni.restaurant.repository;
+package softuni.burgerbox.repository;
 
 
 import org.junit.jupiter.api.Assertions;
@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import softuni.restaurant.model.entity.AllergenEntity;
-import softuni.restaurant.model.entity.enums.AllergenEnumName;
+import softuni.burgerbox.model.entity.AllergenEntity;
+import softuni.burgerbox.model.entity.enums.AllergenEnumName;
 
 import java.util.Arrays;
 import java.util.List;
