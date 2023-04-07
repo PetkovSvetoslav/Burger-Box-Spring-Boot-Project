@@ -1,10 +1,11 @@
 # Burger-Box-Spring-Boot-Project
 
-An online burger & food ordering platform/app,
+An online burgers & food ordering platform/app,
 that can be used from many stations & customers.
 
 Languages and technologies used : Java, Spring, MySQL, HTML, CSS, JS, Bootstrap, Cloudinary
 
+Options:
 Tha app have options for difrent languages.
 
 Options role:
@@ -17,5 +18,9 @@ and can manage users from hidden terminal features.
 Login Access:
 Admin admin
 
-Its start easy just you have to change root & password on MySQL connection.
+Start:
+Its start easy (from BurgerBoxApplication class) just you have to change root & password 
+on MySQL connection in application.properties.
 
+@Test:
+most of the necessary tests have been done
